@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserve a Room - StudyNook Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="l.jpg" alt="StudyNook Cafe Logo" id="cafe-logo">
+        <h1>Room Reservations</h1>
+    </header>
+
+    <nav>
+        <ul id="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+			<li><a href="music.html">Music</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+			<li><a href="reserve.html">Reserve a Spot</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="reservation-section">
+            <h2>Book Your Study Space</h2>
+            <p>Choose a cozy corner for yourself or a group room for team study sessions.</p>
+            <div class="reservation-form-container">
+                <form id="reservation-form" action="your-server-side-processing-url" method="post">
+                    <div class="form-group">
+                        <label for="room-type">Room Type:</label>
+                        <select id="room-type" name="room_type" required>
+                            <option value="">--Select Room Type--</option>
+                            <option value="individual">Individual Study Room</option>
+                            <option value="group">Group Study Room</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+                    </div>
+                    <button type="submit">Reserve Now</button>
+                </form>
+            </div>
+        </section>
+		
+		<section id="availability-section">
+			<h2>Room Availability</h2>
+			<p>Check the status of our study rooms below:</p>
+			<div class="room-availability-grid">
+			<h3>Group Study Rooms:</h3>
+			<div class="room-availability">
+				<span>Room 221:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 222:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 223:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 224:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 225:</span> <span class="status not-available">Not Available</span>
+			</div>
+
+			<h3>Individual Study Rooms:</h3>
+			<div class="room-availability">
+				<span>Room 201:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 202:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 203:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 204:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 205:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 206:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 207:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 208:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 209:</span> <span class="status not-available">not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 210:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 211:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 212:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 213:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 214:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 215:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 216:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 217:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 218:</span> <span class="status not-available">Not Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 219:</span> <span class="status available">Available</span>
+			</div>
+			<div class="room-availability">
+				<span>Room 220:</span> <span class="status not-available">Not Available</span>
+			</div>
+		</div>
+	</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 StudyNook Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>

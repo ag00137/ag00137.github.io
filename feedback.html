@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews for StudyNook Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="l.jpg" alt="StudyNook Cafe Logo" id="cafe-logo">
+        <h1>StudyNook Cafe Reviews</h1>
+    </header>
+
+	<nav>
+        <ul id="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+			<li><a href="music.html">Music</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+			<li><a href="reserve.html">Reserve a Spot</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
+        </ul>
+    </nav>
+	
+	<main>
+        <section id="feedback-section">
+            <h2>Share Your Experience</h2>
+            <p>We love to hear from our guests. Your feedback helps us to improve and to provide the best possible environment for you to enjoy your time.</p>
+            <div class="feedback-form-container">
+                <form id="feedback-form" action="your-server-side-processing-url" method="post">
+                    <div class="form-group">
+                        <label for="feedback-name">Name:</label>
+                        <input type="text" id="feedback-name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="feedback-message">Feedback:</label>
+                        <textarea id="feedback-message" name="message" placeholder="Your feedback" rows="4" required></textarea>
+                    </div>
+                    <button type="submit">Submit Feedback</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="previous-feedback">
+            <h2>What Others Are Saying</h2>
+            <div id="feedback-display">
+                <div class="feedback-entry">
+                <p class="feedback-text">"The cozy atmosphere and robust coffee selection make this the perfect study spot!"</p>
+                <p class="feedback-author">- Alex</p>
+            </div>
+			
+			<div class="feedback-entry">
+            <p class="feedback-text">"I stumbled upon StudyNook Cafe during my visit to the city, and it was love at first sip! The ambiance is perfect for reading a book or working on a laptop. Plus, the vanilla latte was divine. Can't wait to return!"</p>
+            <p class="feedback-author">- Jamie</p>
+			</div>
+			
+			<div class="feedback-entry">
+				<p class="feedback-text">"StudyNook has become my go-to cafe for morning work sessions. The staff is always friendly, the coffee is consistently great, and the quiet atmosphere is just what I need to focus."</p>
+				<p class="feedback-author">- Lacy</p>
+			</div>
+        
+			<div class="feedback-entry">
+				<p class="feedback-text">"Absolutely in love with the matcha latte here! It's the perfect blend of sweetness and earthiness. Plus, the cozy corners of the cafe make for a great meeting spot with friends."</p>
+				<p class="feedback-author">- Erin</p>
+			</div>
+        
+			<div class="feedback-entry">
+				<p class="feedback-text">"The StudyNook Cafe isn't just a place to enjoy a cup of coffee; it's a community hub where I've made friends, networked with colleagues, and relaxed after long days. It holds a special place in my daily routine."</p>
+				<p class="feedback-author">- Kate</p>
+			</div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 StudyNook Cafe. All rights reserved.</p>
+    </footer>
+
+</body>
+
+</html>
